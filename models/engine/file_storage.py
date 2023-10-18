@@ -34,10 +34,9 @@ class FileStorage():
 
     def new(self, obj):
         """
-        public instance method that sets in __objects
+        Sets new object (obj) into __objects
         the obj with key <obj class name>.id
-        Variables:
-        ----------
+        Variables:       
         key [str] -- key format generated.
         """
         if obj:
@@ -73,4 +72,4 @@ class FileStorage():
                 FileStorage.__objects[key] = obj
 
         except FileNotFoundError:
-            pass
+            pass`
